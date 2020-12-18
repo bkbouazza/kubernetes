@@ -27,5 +27,6 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: s-nginx
-        image: nginx:latest
+      - name: nginx
+        image: s-nginx
+        imagePullPolicy: Never
