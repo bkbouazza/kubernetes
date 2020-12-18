@@ -15,4 +15,4 @@ kubectl apply -f config.yaml
 kubectl apply -f nginx.yaml
 
 #RUNNING DASHBOARD
-minikube dashboard &
+#minikube dashboard &
