@@ -11,7 +11,9 @@ kubectl create secret generic -n metallb-system memberlist --from-literal=secret
 
 #INSTALL NGINX
 eval $(minikube docker-env)
-docker build -t s-nginx ./nginx
+cd nginx
+docker build -t s-nginx . 
+cd ..
 kubectl apply -f config.yaml
 kubectl apply -f nginx.yaml
 
